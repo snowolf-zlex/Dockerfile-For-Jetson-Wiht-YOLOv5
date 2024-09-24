@@ -61,5 +61,5 @@ sudo docker run -it --rm \
            -e DISPLAY=$DISPLAY \
            -v /tmp/.X11-unix/:/tmp/.X11-unix \
            -v /path/to/weights:/weights \
-           yolov5:jetson python3 detect.py --source 0 --weights /weights/xxx.pt
+           jetson-yolov5:latest python3 detect.py --source 0 --weights /weights/xxx.pt
 ```
