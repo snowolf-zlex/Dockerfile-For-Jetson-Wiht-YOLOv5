@@ -1,7 +1,18 @@
 # Dockerfile-For-Jetson-Wiht-YOLOv5
 
 这是一个基于NVIDIA L4T ML镜像版本构建的Dockerfile，可用于Jetson设备运行YOLOv5。
-镜像自带PyTorch、Tensorflow、OpenCV 4.5.0 with CUDA等。
+
+### 系统环境
+
+OS:             Ubuntu 20.04.5 LTS
+CUDA:           11.4
+OpenCV:         4.5.0 with CUDA
+TensorRT:       8.5.2.2
+Torch:          2.0.0
+TorchVision:    0.14.1
+TensorFlow:     2.11.0
+NumPy:          1.21.1
+ONNX:           1.13.0
 
 ### 关于YOLOv5
 
