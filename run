@@ -12,4 +12,4 @@ docker run \
        --device /dev/video0:/dev/video0 \
        -e DISPLAY=$DISPLAY \
        -v /tmp/.X11-unix/:/tmp/.X11-unix \
-       yolov5:jetson python3 detect.py --source 0
+       jetson-yolov5:latest python3 detect.py --source 0
