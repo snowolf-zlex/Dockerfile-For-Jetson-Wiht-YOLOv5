@@ -4,6 +4,7 @@
 
 ### 系统环境
 
+``` txt
 OS:             Ubuntu 20.04.5 LTS
 CUDA:           11.4
 OpenCV:         4.5.0 with CUDA
@@ -13,6 +14,7 @@ TorchVision:    0.14.1
 TensorFlow:     2.11.0
 NumPy:          1.21.1
 ONNX:           1.13.0
+```
 
 ### 关于YOLOv5
 
