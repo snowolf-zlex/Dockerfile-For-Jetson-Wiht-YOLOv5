@@ -29,12 +29,14 @@ ONNX:           1.13.0
 使用如下命令构建Docker镜像。
 
 ```bash
+chmod +x ./build
 ./build
 ```
 
 如果构建失败，可使用如下命令重新构建Docker镜像。
 
 ```bash
+chmod +x ./build
 ./build --no-cache
 ```
 
@@ -43,6 +45,7 @@ ONNX:           1.13.0
 这里默认绑定了USB摄像头“/dev/video0”，可使用如下命令运行。
 
 ```bash
+chmod +x ./run
 ./run
 ```
 
