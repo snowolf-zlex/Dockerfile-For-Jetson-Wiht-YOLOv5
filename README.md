@@ -29,14 +29,12 @@ ONNX:           1.13.0
 使用如下命令构建Docker镜像。
 
 ```bash
-chmod +x ./build
 ./build
 ```
 
 如果构建失败，可使用如下命令重新构建Docker镜像。
 
 ```bash
-chmod +x ./build
 ./build --no-cache
 ```
 
@@ -45,13 +43,13 @@ chmod +x ./build
 这里默认绑定了USB摄像头“/dev/video0”，可使用如下命令运行。
 
 ```bash
-chmod +x ./run
 ./run
 ```
 
 ## 运行自己的权重文件
 
 可以参考如下命令，运行自己的权重文件“xxx.pt”
+
 ```bash
 mkdir -p /path/to/weights
 cp xxx.pt /path/to/weights
@@ -65,4 +63,3 @@ sudo docker run -it --rm \
            -v /path/to/weights:/weights \
            yolov5:jetson python3 detect.py --source 0 --weights /weights/xxx.pt
 ```
-
