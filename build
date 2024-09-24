@@ -1,0 +1,1 @@
+sudo docker build -t yolov5:jetson -f Dockerfile .
