@@ -2,6 +2,10 @@
 
 这是一个基于NVIDIA L4T ML镜像版本构建的Dockerfile，可用于Jetson设备运行YOLOv5。
 
+## 主要配置信息
+
+以下为该镜像主要软件配置情况。
+
 ### 系统环境
 
 ``` txt
