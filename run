@@ -1,0 +1,15 @@
+#!/bin/bash
+
+export DISPLAY=:0
+
+xhost +local
+
+docker run \
+       -it \
+       --rm \
+       --runtime nvidia \
+       --network host \
+       --device /dev/video0:/dev/video0 \
+       -e DISPLAY=$DISPLAY \
+       -v /tmp/.X11-unix/:/tmp/.X11-unix \
+       yolov5:jetson python3 detect.py --source 0
